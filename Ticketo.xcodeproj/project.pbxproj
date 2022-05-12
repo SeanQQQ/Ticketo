@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0071BE282D2C2C0022CC75 /* ticketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0071BD282D2C2C0022CC75 /* ticketsController.swift */; };
 		704B00CA2828B8BB0098E5E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00C92828B8BB0098E5E4 /* AppDelegate.swift */; };
 		704B00CC2828B8BB0098E5E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00CB2828B8BB0098E5E4 /* SceneDelegate.swift */; };
 		704B00CE2828B8BB0098E5E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00CD2828B8BB0098E5E4 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0071BD282D2C2C0022CC75 /* ticketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticketsController.swift; sourceTree = "<group>"; };
 		704B00C62828B8BB0098E5E4 /* Ticketo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704B00C92828B8BB0098E5E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704B00CB2828B8BB0098E5E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,9 +78,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0071BC282D2BD20022CC75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F0071BD282D2C2C0022CC75 /* ticketsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		704B00BD2828B8BB0098E5E4 = {
 			isa = PBXGroup;
 			children = (
+				0F0071BC282D2BD20022CC75 /* Controller */,
 				704B00C82828B8BB0098E5E4 /* Ticketo */,
 				704B00DF2828B8BD0098E5E4 /* TicketoTests */,
 				704B00E92828B8BD0098E5E4 /* TicketoUITests */,
@@ -259,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				704B00CE2828B8BB0098E5E4 /* ViewController.swift in Sources */,
+				0F0071BE282D2C2C0022CC75 /* ticketsController.swift in Sources */,
 				704B00CA2828B8BB0098E5E4 /* AppDelegate.swift in Sources */,
 				704B00CC2828B8BB0098E5E4 /* SceneDelegate.swift in Sources */,
 			);
