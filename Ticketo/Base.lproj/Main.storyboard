@@ -456,14 +456,105 @@
                     <view key="view" contentMode="scaleToFill" id="5Jt-hs-V1t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MM-DD" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WwJ-6w-mzD">
+                                <rect key="frame" x="20" y="44" width="81" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Location-Location1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lma-KS-QHV">
+                                <rect key="frame" x="114" y="44" width="160" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Total XX hours" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBm-L9-jCc">
+                                <rect key="frame" x="271" y="44" width="123" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Take-off Time" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tJg-SN-fet">
+                                <rect key="frame" x="36" y="180" width="106" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Airport Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Air-Ij-IfV">
+                                <rect key="frame" x="159" y="180" width="115" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Airline Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZL-bu-7XC">
+                                <rect key="frame" x="296" y="180" width="124" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Airport Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DM0-MW-BGg">
+                                <rect key="frame" x="159" y="340" width="115" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="联图二维码" translatesAutoresizingMaskIntoConstraints="NO" id="0Z4-Eg-Q7X">
+                                <rect key="frame" x="87" y="555" width="240" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Scan your QR code to check-in " borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="haW-Op-Sun">
+                                <rect key="frame" x="87" y="505" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow.down.to.line.alt" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DSL-Kc-Tnb">
+                                <rect key="frame" x="36" y="256.5" width="40" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Landing Time" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2r-vg-iLy">
+                                <rect key="frame" x="36" y="340" width="116" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6040d0893b8261614860425354" translatesAutoresizingMaskIntoConstraints="NO" id="rvS-sG-LKH">
+                                <rect key="frame" x="10" y="410" width="394" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Airline Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vx4-Dr-yjb">
+                                <rect key="frame" x="296" y="340" width="124" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="*International flight departure and landing times are local time" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-CM-ZnX">
+                                <rect key="frame" x="33" y="404" width="348" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="6040d0893b8261614860425354" translatesAutoresizingMaskIntoConstraints="NO" id="Gcq-R6-TQn">
+                                <rect key="frame" x="20" y="86" width="374" height="46"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="15y-4a-SyR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gcq-R6-TQn" firstAttribute="top" secondItem="lma-KS-QHV" secondAttribute="bottom" constant="8" id="0U7-62-hqh"/>
+                            <constraint firstItem="Gcq-R6-TQn" firstAttribute="leading" secondItem="15y-4a-SyR" secondAttribute="leading" constant="20" id="7Pm-ah-xlt"/>
+                            <constraint firstItem="15y-4a-SyR" firstAttribute="trailing" secondItem="XBm-L9-jCc" secondAttribute="trailing" constant="20" id="JDq-lL-Y2o"/>
+                            <constraint firstItem="lma-KS-QHV" firstAttribute="leading" secondItem="WwJ-6w-mzD" secondAttribute="trailing" constant="13" id="SLw-rI-1DB"/>
+                            <constraint firstItem="15y-4a-SyR" firstAttribute="trailing" secondItem="Gcq-R6-TQn" secondAttribute="trailing" constant="20" id="c7F-5K-bA2"/>
+                            <constraint firstItem="WwJ-6w-mzD" firstAttribute="leading" secondItem="15y-4a-SyR" secondAttribute="leading" constant="20" id="cJd-bH-IrP"/>
+                            <constraint firstItem="lma-KS-QHV" firstAttribute="top" secondItem="15y-4a-SyR" secondAttribute="top" id="ptf-Fe-iGv"/>
+                            <constraint firstItem="WwJ-6w-mzD" firstAttribute="top" secondItem="15y-4a-SyR" secondAttribute="top" id="sXH-XW-SJ2"/>
+                            <constraint firstItem="XBm-L9-jCc" firstAttribute="top" secondItem="15y-4a-SyR" secondAttribute="top" id="t8A-WD-sXa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ticket Datail" id="oO3-Ow-b8b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQg-Zy-2Nl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3461" y="-88"/>
+            <point key="canvasLocation" x="3460.8695652173915" y="-88.392857142857139"/>
         </scene>
         <!--Flights-->
         <scene sceneID="fRs-jn-ZTq">
@@ -519,8 +610,11 @@
         <segue reference="ahX-bB-aMD"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="6040d0893b8261614860425354" width="3307" height="2362"/>
         <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="arrow.down.to.line.alt" catalog="system" width="128" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="联图二维码" width="300" height="300"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
