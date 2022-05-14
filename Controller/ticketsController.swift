@@ -14,6 +14,8 @@ class ticketsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DataController.OpenDatabase();
         // Do any additional setup after loading the view.
     }
 
