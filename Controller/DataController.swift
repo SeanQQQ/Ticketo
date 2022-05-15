@@ -37,7 +37,7 @@ class DataController{
         return flightList
     }
     
-    static func getFlight(id: Int) -> flightStruct?{
+    static func getFlight(id: Int) -> flightStruct?{ //gets flight by id
         for flight in getFlights(){
             if(flight.id == id){
                 return flight
@@ -46,7 +46,7 @@ class DataController{
         return nil
     }
     
-    static func addUser(username: String, password: String) {
+    static func addUser(username: String, password: String) { //signs up new user
       
         guard let appDelegate =
                 UIApplication.shared.delegate as? AppDelegate else {
@@ -71,7 +71,7 @@ class DataController{
     static func getUserAndAuth(username: String, password: String) -> userStruct{ //Returns User if username and pwd correct, returns error code otherwise
         guard let appDelegate =
                 UIApplication.shared.delegate as? AppDelegate else {
-                    return userStruct(username: "ERR0", password: "ERR0")
+                    return userStruct(username: "ERR0", password: "ERR0") //Db Failure Error
                 }
       
         let context = appDelegate.persistentContainer.viewContext
@@ -95,16 +95,16 @@ class DataController{
                     return userStruct(username: currentUsername, password: currentPassword)
                 }else{
                     print("not authorized")
-                    return userStruct(username: "ERR2", password: "ERR2")
+                    return userStruct(username: "ERR2", password: "ERR2") //user not authorized error
                 }
             }
         }
         
         print("user not found")
-        return userStruct(username: "ERR1", password: "ERR1")
+        return userStruct(username: "ERR1", password: "ERR1") //user not found error
     }
     
-    static func AddUserTicket(username: String, flightId: Int){
+    static func AddUserTicket(username: String, flightId: Int){ //adds ticket to user's collection after purchase
         guard let appDelegate =
                 UIApplication.shared.delegate as? AppDelegate else {
                     return
@@ -125,7 +125,7 @@ class DataController{
         }
     }
     
-    static func GetUserTickets(username: String) -> [flightStruct]{
+    static func GetUserTickets(username: String) -> [flightStruct]{ //returns list of user owned tickets
         var retTickets: [flightStruct] = []
         
         guard let appDelegate =
