@@ -37,6 +37,15 @@ class DataController{
         return flightList
     }
     
+    static func getFlight(id: Int) -> flightStruct?{
+        for flight in getFlights(){
+            if(flight.id == id){
+                return flight
+            }
+        }
+        return nil
+    }
+    
     static func addUser(username: String, password: String) {
       
         guard let appDelegate =
@@ -59,7 +68,7 @@ class DataController{
         }
     }
     
-    static func getUserAndAuth(username: String, password: String) -> userStruct{
+    static func getUserAndAuth(username: String, password: String) -> userStruct{ //Returns User if username and pwd correct, returns error code otherwise
         guard let appDelegate =
                 UIApplication.shared.delegate as? AppDelegate else {
                     return userStruct(username: "ERR0", password: "ERR0")
@@ -93,6 +102,64 @@ class DataController{
         
         print("user not found")
         return userStruct(username: "ERR1", password: "ERR1")
+    }
+    
+    static func AddUserTicket(username: String, flightId: Int){
+        guard let appDelegate =
+                UIApplication.shared.delegate as? AppDelegate else {
+                    return
+                }
+      
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "UserFlight", in: context)!
+        
+        let userflight = NSManagedObject(entity: entity, insertInto: context)
+
+        userflight.setValue(username, forKeyPath: "username")
+        userflight.setValue(flightId, forKeyPath: "flightId")
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failure")
+        }
+    }
+    
+    static func GetUserTickets(username: String) -> [flightStruct]{
+        var retTickets: [flightStruct] = []
+        
+        guard let appDelegate =
+                UIApplication.shared.delegate as? AppDelegate else {
+                    return []
+                    
+                }
+      
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSManagedObject>(entityName: "UserFlight")
+        
+        var UserFlight: [NSManagedObject] = []
+        
+        do{
+            UserFlight = try context.fetch(request)
+        }catch{
+            print("Fetch Failed")
+        }
+        
+        for ticket in UserFlight{
+            let currentUsername = ticket.value(forKey: "username") as! String
+            let currentId = ticket.value(forKey: "flightId") as! Int
+
+            
+            if(currentUsername == username){
+                let currentticket = getFlight(id: currentId);
+                if currentticket != nil{
+                    retTickets.append(currentticket!)
+                }
+            }
+            
+        }
+        return retTickets;
     }
 }
 
