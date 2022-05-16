@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F0071BE282D2C2C0022CC75 /* ticketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0071BD282D2C2C0022CC75 /* ticketsController.swift */; };
+		0FD5F2062832E6E30031D544 /* ticketDetailedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5F2052832E6E30031D544 /* ticketDetailedController.swift */; };
+		0FD5F2082832E7090031D544 /* flightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5F2072832E7090031D544 /* flightsController.swift */; };
+		0FD5F20A2832E7210031D544 /* flightDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5F2092832E7210031D544 /* flightDetailController.swift */; };
 		704B00CA2828B8BB0098E5E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00C92828B8BB0098E5E4 /* AppDelegate.swift */; };
 		704B00CC2828B8BB0098E5E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00CB2828B8BB0098E5E4 /* SceneDelegate.swift */; };
 		704B00CE2828B8BB0098E5E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00CD2828B8BB0098E5E4 /* ViewController.swift */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		0F0071BD282D2C2C0022CC75 /* ticketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticketsController.swift; sourceTree = "<group>"; };
+		0FD5F2052832E6E30031D544 /* ticketDetailedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticketDetailedController.swift; sourceTree = "<group>"; };
+		0FD5F2072832E7090031D544 /* flightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flightsController.swift; sourceTree = "<group>"; };
+		0FD5F2092832E7210031D544 /* flightDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flightDetailController.swift; sourceTree = "<group>"; };
 		704B00C62828B8BB0098E5E4 /* Ticketo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704B00C92828B8BB0098E5E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704B00CB2828B8BB0098E5E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				0F0071BD282D2C2C0022CC75 /* ticketsController.swift */,
+				0FD5F2072832E7090031D544 /* flightsController.swift */,
+				0FD5F2092832E7210031D544 /* flightDetailController.swift */,
+				0FD5F2052832E6E30031D544 /* ticketDetailedController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,10 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD5F20A2832E7210031D544 /* flightDetailController.swift in Sources */,
 				704B00CE2828B8BB0098E5E4 /* ViewController.swift in Sources */,
 				0F0071BE282D2C2C0022CC75 /* ticketsController.swift in Sources */,
 				704B00CA2828B8BB0098E5E4 /* AppDelegate.swift in Sources */,
+				0FD5F2082832E7090031D544 /* flightsController.swift in Sources */,
 				704B00CC2828B8BB0098E5E4 /* SceneDelegate.swift in Sources */,
+				0FD5F2062832E6E30031D544 /* ticketDetailedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
