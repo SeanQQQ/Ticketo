@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tt-U4-RO9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tt-U4-RO9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -544,12 +544,12 @@
         <!--Flights-->
         <scene sceneID="fRs-jn-ZTq">
             <objects>
-                <viewController id="6Dt-KB-olE" sceneMemberID="viewController">
+                <viewController id="6Dt-KB-olE" customClass="FlightsController" customModule="Ticketo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kyt-WQ-dx4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPN-e5-LII">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="RPN-e5-LII">
                                 <rect key="frame" x="0.0" y="97" width="414" height="153"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwV-Tp-8mv">
@@ -589,28 +589,28 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebM-TM-SEl">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebM-TM-SEl">
                                         <rect key="frame" x="114" y="0.0" width="300" height="153"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zdw-mm-euN">
-                                                <rect key="frame" x="102.5" y="25" width="95" height="45.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zdw-mm-euN">
+                                                <rect key="frame" x="103" y="25" width="94.5" height="45.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A79-sx-prV">
-                                                <rect key="frame" x="103.5" y="90" width="93" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A79-sx-prV">
+                                                <rect key="frame" x="104" y="90" width="92.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgo-bI-hI4">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgo-bI-hI4">
                                                 <rect key="frame" x="244.5" y="61" width="35.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="   "/>
                                                 <connections>
-                                                    <segue destination="t4R-92-oDk" kind="show" id="j6K-wO-iSn"/>
+                                                    <segue destination="t4R-92-oDk" kind="show" identifier="flight1segue" id="j6K-wO-iSn"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-nz-Hlo">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-nz-Hlo">
                                                 <rect key="frame" x="251" y="65.5" width="21" height="20"/>
                                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                             </imageView>
@@ -922,27 +922,46 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="&gt;"/>
+                                <connections>
+                                    <action selector="nextButtonClicked:" destination="6Dt-KB-olE" eventType="touchUpInside" id="DKq-pG-cdz"/>
+                                    <action selector="s:" destination="ZMd-UL-yB8" eventType="touchUpInside" id="aeZ-Nu-816"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5C-MW-Ytw" userLabel="btn_prev">
                                 <rect key="frame" x="44" y="805" width="33" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="&lt;"/>
+                                <connections>
+                                    <action selector="prevButtonClicked:" destination="6Dt-KB-olE" eventType="touchUpInside" id="y2V-R0-xs4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Sx-OU-2uv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RPN-e5-LII" firstAttribute="centerX" secondItem="1Sx-OU-2uv" secondAttribute="centerX" id="4Ik-E1-0S1"/>
+                            <constraint firstItem="RPN-e5-LII" firstAttribute="width" secondItem="Kyt-WQ-dx4" secondAttribute="width" id="TQI-DS-kTe"/>
+                            <constraint firstItem="RPN-e5-LII" firstAttribute="top" secondItem="1Sx-OU-2uv" secondAttribute="top" constant="9" id="eKl-Jg-gwf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Flights" id="NGk-Iv-xco"/>
+                    <connections>
+                        <outlet property="btn_flight1nav" destination="dgo-bI-hI4" id="jHQ-4R-oFQ"/>
+                        <outlet property="txt_date1" destination="A79-sx-prV" id="QrH-yb-g83"/>
+                        <outlet property="txt_destination1" destination="14Q-cg-0DO" id="1WP-b3-axg"/>
+                        <outlet property="txt_origin1" destination="s8S-GH-TRw" id="mgX-5q-pTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXZ-0e-CbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ZMd-UL-yB8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2444.9275362318845" y="695.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Flight Detail Controller-->
         <scene sceneID="C4m-lG-XRk">
             <objects>
-                <viewController id="t4R-92-oDk" sceneMemberID="viewController">
+                <viewController id="t4R-92-oDk" customClass="FlightDetailController" customModule="Ticketo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5i-5N-VVK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -952,6 +971,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Buy Now"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMf-r1-uwH">
+                                <rect key="frame" x="189" y="270" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BdW-kD-ept"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -961,10 +987,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f0n-nd-cRM"/>
+                    <connections>
+                        <outlet property="lbl_flightname" destination="JMf-r1-uwH" id="SJ4-dC-JWt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rav-dm-oft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3426" y="696"/>
+            <point key="canvasLocation" x="3424.6376811594205" y="695.75892857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lp9-JY-VNG">
