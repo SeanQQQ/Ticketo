@@ -18,6 +18,8 @@
 		704B00E12828B8BD0098E5E4 /* TicketoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00E02828B8BD0098E5E4 /* TicketoTests.swift */; };
 		704B00EB2828B8BD0098E5E4 /* TicketoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00EA2828B8BD0098E5E4 /* TicketoUITests.swift */; };
 		704B00ED2828B8BD0098E5E4 /* TicketoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B00EC2828B8BD0098E5E4 /* TicketoUITestsLaunchTests.swift */; };
+		70523C2828321AEB0026FA24 /* FlightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70523C2728321AEB0026FA24 /* FlightsController.swift */; };
+		70523C2A2832225F0026FA24 /* FlightDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70523C292832225F0026FA24 /* FlightDetailController.swift */; };
 		708EDC7D2830A6C3001FB224 /* Db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 708EDC7B2830A6C3001FB224 /* Db.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		704B00E62828B8BD0098E5E4 /* TicketoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		704B00EA2828B8BD0098E5E4 /* TicketoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketoUITests.swift; sourceTree = "<group>"; };
 		704B00EC2828B8BD0098E5E4 /* TicketoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70523C2728321AEB0026FA24 /* FlightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsController.swift; sourceTree = "<group>"; };
+		70523C292832225F0026FA24 /* FlightDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailController.swift; sourceTree = "<group>"; };
 		708EDC7C2830A6C3001FB224 /* Db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Db.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,8 @@
 			children = (
 				0F0071BD282D2C2C0022CC75 /* ticketsController.swift */,
 				70477E75282F685C0091FCA4 /* DataController.swift */,
+				70523C2728321AEB0026FA24 /* FlightsController.swift */,
+				70523C292832225F0026FA24 /* FlightDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,8 +285,10 @@
 				704B00CE2828B8BB0098E5E4 /* ViewController.swift in Sources */,
 				0F0071BE282D2C2C0022CC75 /* ticketsController.swift in Sources */,
 				704B00CA2828B8BB0098E5E4 /* AppDelegate.swift in Sources */,
+				70523C2A2832225F0026FA24 /* FlightDetailController.swift in Sources */,
 				704B00CC2828B8BB0098E5E4 /* SceneDelegate.swift in Sources */,
 				708EDC7D2830A6C3001FB224 /* Db.xcdatamodeld in Sources */,
+				70523C2828321AEB0026FA24 /* FlightsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

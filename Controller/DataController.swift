@@ -26,16 +26,16 @@ struct userStruct{
 
 class DataController{
     
-    static func getFlights() -> [flightStruct] { //In Production this will access an online Db, but for demonstration purposes it returns a hardcoded array of Flights
+    public static func getFlights() -> [flightStruct] { //In Production this will access an online Db, but for demonstration purposes it returns a hardcoded array of Flights
         let flightList = [
             flightStruct(to: "Calais", from: "London", date: "5/5/2022", id: 1),
             flightStruct(to: "Moscow", from: "Kyoto", date: "2/6/2022", id: 2),
             flightStruct(to: "Tokyo", from: "Sydney", date: "7/8/2022", id: 3),
-            flightStruct(to: "Perth", from: "Abu Dhabi", date: "1/6/2022", id: 4),
-            flightStruct(to: "Brisbane", from: "Las Vegas", date: "5/5/2022", id: 5),
-            flightStruct(to: "Atlanta", from: "Berlin", date: "2/6/2022", id: 6),
-            flightStruct(to: "Tianjin", from: "Nairobi", date: "7/8/2022", id: 7),
-            flightStruct(to: "Perth", from: "Sydney", date: "1/6/2022", id: 8)
+            flightStruct(to: "Perth", from: "Abu Dhabi", date: "9/6/2022", id: 4),
+            flightStruct(to: "Brisbane", from: "Las Vegas", date: "4/4/2022", id: 5),
+            flightStruct(to: "Atlanta", from: "Berlin", date: "7/5/2022", id: 6),
+            flightStruct(to: "Tianjin", from: "Nairobi", date: "9/9/2022", id: 7),
+            flightStruct(to: "Perth", from: "Sydney", date: "14/2/2022", id: 8)
         ]
         
         return flightList
