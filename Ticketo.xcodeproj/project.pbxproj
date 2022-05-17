@@ -21,6 +21,7 @@
 		70523C2828321AEB0026FA24 /* FlightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70523C2728321AEB0026FA24 /* FlightsController.swift */; };
 		70523C2A2832225F0026FA24 /* FlightDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70523C292832225F0026FA24 /* FlightDetailController.swift */; };
 		708EDC7D2830A6C3001FB224 /* Db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 708EDC7B2830A6C3001FB224 /* Db.xcdatamodeld */; };
+		BF5275A62833A20E00957384 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5275A52833A20E00957384 /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		70523C2728321AEB0026FA24 /* FlightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsController.swift; sourceTree = "<group>"; };
 		70523C292832225F0026FA24 /* FlightDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailController.swift; sourceTree = "<group>"; };
 		708EDC7C2830A6C3001FB224 /* Db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Db.xcdatamodel; sourceTree = "<group>"; };
+		BF5275A52833A20E00957384 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				70477E75282F685C0091FCA4 /* DataController.swift */,
 				70523C2728321AEB0026FA24 /* FlightsController.swift */,
 				70523C292832225F0026FA24 /* FlightDetailController.swift */,
+				BF5275A52833A20E00957384 /* loginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				704B00CC2828B8BB0098E5E4 /* SceneDelegate.swift in Sources */,
 				708EDC7D2830A6C3001FB224 /* Db.xcdatamodeld in Sources */,
 				70523C2828321AEB0026FA24 /* FlightsController.swift in Sources */,
+				BF5275A62833A20E00957384 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

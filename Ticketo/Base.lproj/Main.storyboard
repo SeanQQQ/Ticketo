@@ -9,20 +9,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--loginPage-->
         <scene sceneID="aI9-iR-tkE">
             <objects>
-                <viewController id="IO8-ZO-LzJ" sceneMemberID="viewController">
+                <viewController id="IO8-ZO-LzJ" userLabel="loginPage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tKn-Pk-Ju1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZs-Fa-nc1">
-                                <rect key="frame" x="105" y="679" width="200" height="75"/>
+                                <rect key="frame" x="226" y="678" width="152" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7tt-U4-RO9" kind="show" id="tLL-Ic-wfi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxV-qd-Ll2">
+                                <rect key="frame" x="43" y="678" width="152" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign up" cornerStyle="fixed">
                                     <backgroundConfiguration key="background"/>
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 </buttonConfiguration>
@@ -67,6 +80,13 @@
                                 <rect key="frame" x="0.0" y="53" width="414" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="do not have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY7-0z-zrc">
+                                <rect key="frame" x="31" y="649" width="164" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="66n-jA-4D7"/>
                         <color key="backgroundColor" red="0.42579421780796872" green="0.58346603072953995" blue="0.96611279249191284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -74,14 +94,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og2-Xq-Xin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.79710144927537" y="-345.53571428571428"/>
+            <point key="canvasLocation" x="-890" y="94"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ticketo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-RL-MTI">
@@ -106,6 +126,10 @@
                                     <segue destination="6Dt-KB-olE" kind="show" id="g2d-q9-7BV"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drawing.sketchpad (1) (1)" translatesAutoresizingMaskIntoConstraints="NO" id="eFj-av-616">
+                                <rect key="frame" x="0.0" y="88" width="414" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.42579421779999999" green="0.58346603070000003" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -122,18 +146,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701.449275362319" y="93.75"/>
+            <point key="canvasLocation" x="1259" y="94"/>
         </scene>
         <!--MyTickets-->
         <scene sceneID="IFD-o7-tz8">
             <objects>
                 <viewController storyboardIdentifier="Tickets" id="AI5-5d-iAg" customClass="ticketsController" customModule="Ticketo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Tickets" id="YCM-BJ-idI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="NlC-ch-EXy">
-                                <rect key="frame" x="0.0" y="157" width="414" height="678"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="678"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-Bm-Gwv">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
@@ -546,11 +570,11 @@
             <objects>
                 <viewController id="6Dt-KB-olE" customClass="FlightsController" customModule="Ticketo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kyt-WQ-dx4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="RPN-e5-LII">
-                                <rect key="frame" x="0.0" y="97" width="414" height="153"/>
+                                <rect key="frame" x="0.0" y="65" width="414" height="153"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwV-Tp-8mv">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="153"/>
@@ -963,11 +987,11 @@
             <objects>
                 <viewController id="t4R-92-oDk" customClass="FlightDetailController" customModule="Ticketo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5i-5N-VVK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2N-Bh-TZd">
-                                <rect key="frame" x="166" y="724" width="82" height="31"/>
+                                <rect key="frame" x="166" y="704" width="82" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Buy Now"/>
                             </button>
@@ -1000,8 +1024,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7tt-U4-RO9" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="2zj-Tu-cLJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o8u-oe-dTI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1011,7 +1036,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5If-Z2-5O3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="29" y="94"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
