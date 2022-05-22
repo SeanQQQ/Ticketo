@@ -10,41 +10,33 @@ import UIKit
 
 class FlightsController: UIViewController {
 
-    
     @IBOutlet weak var to1: UILabel!
-    
     @IBOutlet weak var from1: UILabel!
-    
     @IBOutlet weak var date1: UILabel!
     
     @IBOutlet weak var from2: UILabel!
-    
     @IBOutlet weak var to2: UILabel!
-    
     @IBOutlet weak var date2: UILabel!
     
     @IBOutlet weak var date3: UILabel!
     @IBOutlet weak var to3: UILabel!
     @IBOutlet weak var from3: UILabel!
+    
     @IBOutlet weak var from4: UILabel!
     @IBOutlet weak var to4: UILabel!
-    
     @IBOutlet weak var date4: UILabel!
     
     @IBOutlet weak var from5: UILabel!
     @IBOutlet weak var to5: UILabel!
-    
     @IBOutlet weak var date5: UILabel!
     
     @IBOutlet weak var from6: UILabel!
-    
     @IBOutlet weak var to6: UILabel!
-    
     @IBOutlet weak var date6: UILabel!
+    
     var currentpage = 0;
     let PAGE_COUNT = 2;
     
-
     var flight1 = DataController.getFlight(id: 1);
     var flight2 = DataController.getFlight(id: 2);
     var flight3 = DataController.getFlight(id: 3);
