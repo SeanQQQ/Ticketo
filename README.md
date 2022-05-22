@@ -2,10 +2,14 @@
 
 Group 2:​
 
+https://github.com/SeanQQQ/Ticketo.git
+
 Shanglin Jiang​
+13399391
 Shanglin.Jiang@student.uts.edu.au
 
 Yu-Cheng Lin​
+13657832
 Yu-Cheng.Lin-1@student.uts.edu.au
 
 Richard Renshaw​
