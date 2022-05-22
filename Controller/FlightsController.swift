@@ -10,13 +10,25 @@ import UIKit
 
 class FlightsController: UIViewController {
 
-    @IBOutlet weak var StackView_Flight1: UIStackView!
     
-    @IBOutlet weak var txt_origin1: UITextField!
-    @IBOutlet weak var txt_destination1: UITextField!
-    @IBOutlet weak var txt_date1: UITextField!
-    @IBOutlet weak var btn_flight1nav: UIButton!
+    @IBOutlet weak var to1: UILabel!
     
+    @IBOutlet weak var from1: UILabel!
+    
+    @IBOutlet weak var date1: UILabel!
+    
+    @IBOutlet weak var from2: UILabel!
+    
+    @IBOutlet weak var to2: UILabel!
+    
+    @IBOutlet weak var date2: UILabel!
+    
+    @IBOutlet weak var to3: UILabel!
+    @IBOutlet weak var from3: UILabel!
+    @IBOutlet weak var from4: UILabel!
+    @IBOutlet weak var to4: UILabel!
+    @IBOutlet weak var from5: UILabel!
+    @IBOutlet weak var to5: UILabel!
     var currentpage = 0;
     let PAGE_COUNT = 2;
     
@@ -25,6 +37,11 @@ class FlightsController: UIViewController {
     var flight2 = DataController.getFlight(id: 2);
     var flight3 = DataController.getFlight(id: 3);
     var flight4 = DataController.getFlight(id: 4);
+    var flight5 = DataController.getFlight(id: 5);
+    var flight6 = DataController.getFlight(id: 6);
+    var flight7 = DataController.getFlight(id: 7);
+    var flight8 = DataController.getFlight(id: 8);
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,9 +80,26 @@ class FlightsController: UIViewController {
         flight3 = DataController.getFlight(id: 3 + currentpage*4);
         flight4 = DataController.getFlight(id: 4 + currentpage*4);
 
-        txt_origin1.text = flight1?.from;
-        txt_destination1.text = flight1?.to;
-        txt_date1.text = flight1?.date;
+        to1.text = flight1?.from;
+        from1.text = flight1?.to;
+        date1.text = flight1?.date;
+        
+        
+        to2.text = flight2?.from;
+        from2.text = flight2?.to;
+        date2.text = flight2?.date;
+        
+    
+        to2.text = flight3?.from;
+        from2.text = flight3?.to;
+        
+        to3.text = flight3?.from;
+        from3.text = flight3?.to;
+        
+        
+        to4.text = flight4?.from;
+        from4.text = flight4?.to;
+        
     }
 
     
@@ -74,6 +108,17 @@ class FlightsController: UIViewController {
             let VC = segue.destination as! FlightDetailController;
             VC.currentFlight = flight1;
         }
-    }
+        if(segue.identifier == "flight2segue"){
+            let VC = segue.destination as! FlightDetailController;
+            VC.currentFlight = flight2;
+        }
+        if(segue.identifier == "flight3segue"){
+            let VC = segue.destination as! FlightDetailController;
+            VC.currentFlight = flight3;
+        }
+        if(segue.identifier == "flight4segue"){
+            let VC = segue.destination as! FlightDetailController;
+            VC.currentFlight = flight4;
+        }    }
     
 }

@@ -12,13 +12,18 @@ class FlightDetailController: UIViewController {
 
     var currentFlight : flightStruct? = nil;
     
-    @IBOutlet weak var lbl_flightname: UILabel!
     
+    @IBOutlet weak var from: UITextField!
+    
+    @IBOutlet weak var to: UITextField!
+    
+    @IBOutlet weak var date: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        lbl_flightname.text = currentFlight?.from;
-        // Do any additional setup after loading the view.
+        from.text = currentFlight?.from;
+        to.text = currentFlight?.to;
+        date.text = currentFlight?.date;// Do any additional setup after loading the view.
     }
 
     @IBAction func buyNowClicked(_ sender: Any) {
