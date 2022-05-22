@@ -25,10 +25,10 @@ class ticketsController: UIViewController {
     
     private func loadTicketText(){
         let x = DataController.GetUserTickets(username: username);
-        
-        print(x[0].from)
-        print(x[0].to)
-        print(x[0].date)
+        print(x)
+        //print(x[0].from)
+        //print(x[0].to)
+        //print(x[0].date)
 
     }
 

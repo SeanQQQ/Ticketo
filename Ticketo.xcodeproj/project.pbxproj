@@ -99,6 +99,7 @@
 				70523C292832225F0026FA24 /* FlightDetailController.swift */,
 				BF5275A52833A20E00957384 /* loginViewController.swift */,
 				BF5275A72833F39B00957384 /* PopUpViewController.swift */,
+				704B00CD2828B8BB0098E5E4 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,7 +131,6 @@
 			children = (
 				704B00C92828B8BB0098E5E4 /* AppDelegate.swift */,
 				704B00CB2828B8BB0098E5E4 /* SceneDelegate.swift */,
-				704B00CD2828B8BB0098E5E4 /* ViewController.swift */,
 				704B00CF2828B8BB0098E5E4 /* Main.storyboard */,
 				704B00D22828B8BD0098E5E4 /* Assets.xcassets */,
 				704B00D42828B8BD0098E5E4 /* LaunchScreen.storyboard */,

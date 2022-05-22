@@ -9,6 +9,16 @@ import UIKit
 
 class PopUpViewController: UIViewController {
 
+    @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var check_password: UITextField!
+    
+    @IBOutlet weak var register: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
