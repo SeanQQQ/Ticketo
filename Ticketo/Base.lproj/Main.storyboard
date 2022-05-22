@@ -642,6 +642,14 @@
                     <navigationItem key="navigationItem" title="MyTickets" id="vgM-yb-F3S">
                         <barButtonItem key="rightBarButtonItem" image="square.and.arrow.up" catalog="system" id="dKQ-bX-sNC"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="date1" destination="Nex-vr-eae" id="Rg5-fx-hGu"/>
+                        <outlet property="date2" destination="oxi-kZ-3F7" id="zaU-aB-1RO"/>
+                        <outlet property="from1" destination="faj-AQ-cmH" id="N61-4p-i3D"/>
+                        <outlet property="from2" destination="PN9-AJ-kSu" id="juN-I4-SaJ"/>
+                        <outlet property="to1" destination="ZRF-KD-9Fx" id="h75-UL-0uO"/>
+                        <outlet property="to2" destination="uNv-dO-eNx" id="wUW-PG-JDu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSe-Hy-Oxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1770,7 +1778,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EWc-AL-wxT"/>
+        <segue reference="E51-3l-iqh"/>
         <segue reference="j5q-ST-2Ma"/>
     </inferredMetricsTieBreakers>
     <resources>
