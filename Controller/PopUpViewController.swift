@@ -25,10 +25,11 @@ class PopUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func closePopUp(_ sender: AnyObject) {
+    @IBAction func registerAccount(_ sender: Any) {
         self.view.removeFromSuperview()
+        
     }
-    
+
     /*
     // MARK: - Navigation
 
