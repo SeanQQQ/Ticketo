@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tt-U4-RO9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tt-U4-RO9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -683,17 +683,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MM-DD" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYJ-fB-hNG">
-                                <rect key="frame" x="20" y="0.0" width="81" height="34"/>
+                                <rect key="frame" x="20" y="44" width="81" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Location-Location1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xcw-QZ-PwN">
-                                <rect key="frame" x="114" y="0.0" width="160" height="34"/>
+                                <rect key="frame" x="114" y="44" width="160" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Total XX hours" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3B-tO-Ujr">
-                                <rect key="frame" x="271" y="0.0" width="123" height="34"/>
+                                <rect key="frame" x="271" y="44" width="123" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1562,16 +1562,22 @@
                     <connections>
                         <outlet property="date1" destination="jKG-DA-4a1" id="MQR-w2-yRK"/>
                         <outlet property="date2" destination="Oij-iz-W0q" id="Hqh-HW-VzX"/>
+                        <outlet property="date3" destination="p4n-2i-T1X" id="lcG-90-ByW"/>
+                        <outlet property="date4" destination="yHR-K9-BD7" id="q8i-2d-CCw"/>
+                        <outlet property="date5" destination="To6-Ef-E8d" id="56D-FE-hd0"/>
+                        <outlet property="date6" destination="UND-HV-WNL" id="UBa-W9-5Qr"/>
                         <outlet property="from1" destination="0GG-H1-GTB" id="Fjd-X2-zzG"/>
                         <outlet property="from2" destination="v6r-1L-R44" id="jwT-QZ-W5H"/>
                         <outlet property="from3" destination="M2q-PY-WAl" id="nA8-LH-esD"/>
                         <outlet property="from4" destination="QGF-1q-Gpz" id="Qtk-vN-jTQ"/>
                         <outlet property="from5" destination="dKI-of-hbC" id="U63-9Z-xnh"/>
+                        <outlet property="from6" destination="25P-AB-7mx" id="xbl-Qb-QnT"/>
                         <outlet property="to1" destination="fiM-vR-Gos" id="zTJ-6i-gcK"/>
                         <outlet property="to2" destination="KAA-T4-VaA" id="pzB-xm-iNN"/>
                         <outlet property="to3" destination="yRN-mQ-WAq" id="mnk-ta-cVs"/>
                         <outlet property="to4" destination="xlL-5B-YzV" id="2QM-XS-EDi"/>
                         <outlet property="to5" destination="TW4-M2-2XR" id="N2M-Vs-AwM"/>
+                        <outlet property="to6" destination="hfS-j4-zxL" id="O92-dl-rgd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQl-lM-Bzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
